@@ -53,20 +53,18 @@ In order to run a C++ program, you need to have a C++ compiler installed on your
 Once you have written your C++ code, you need to compile it in order to create an executable file. To do this, open a terminal or command prompt and navigate to the directory where your source code file is located. Then, type the following command:
 
 ```bash
-  g++ -o program_name source_code_file.cpp
+  g++ main.cpp -o main.out
 ```
-
-This command will compile your code and create an executable file named "program_name". You can replace "program_name" with any name you like, but it's a good idea to give it a name that reflects the purpose of your program.
 
 ### Running the program
 
 Once you have compiled your program, you can run it by typing the following command in the terminal or command prompt:
 
 ```bash
-  ./program_name
+  ./main.out
 ```
 
-This will execute your program and you should see the output in the terminal.
+This will execute your program and you should see the output in the output folder in images.
 
 ## Conclusion
 
