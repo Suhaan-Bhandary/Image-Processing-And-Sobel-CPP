@@ -1,0 +1,9 @@
+{
+  "editor.tabSize": 4,
+  "cSpell.words": ["sobel"],
+  "files.associations": {
+    "*.ejs": "html",
+    "cmath": "cpp",
+    "random": "cpp"
+  }
+}
