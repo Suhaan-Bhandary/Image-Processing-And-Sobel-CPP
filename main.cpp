@@ -149,7 +149,7 @@ void sobelFilter()
 {
     ifstream image;
     ofstream newImage;
-    image.open("images/input/vinay.ppm");
+    image.open("images/input/flower.ppm");
     newImage.open("images/output/sobelFilter.ppm");
 
     if (!image.is_open() || !newImage.is_open())
