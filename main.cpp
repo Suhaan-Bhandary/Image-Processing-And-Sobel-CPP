@@ -149,7 +149,7 @@ void sobelFilter()
 {
     ifstream image;
     ofstream newImage;
-    image.open("images/input/flower.ppm");
+    image.open("images/input/vinay.ppm");
     newImage.open("images/output/sobelFilter.ppm");
 
     if (!image.is_open() || !newImage.is_open())
@@ -206,10 +206,14 @@ void sobelFilter()
             // Get the multiplication of the matrix for rgb
             int horizontal = multipleEachCellWithFilterCell(i, j, grayMatrix, horizontalSobel);
             int vertical = multipleEachCellWithFilterCell(i, j, grayMatrix, verticalSobel);
+
             int g = sqrt(horizontal * horizontal + vertical * vertical);
 
+            // Converting the pixel value to Black or white
+            int newG = g >= 100 ? 255 : 0;
+
             // Copying the filtered pixel result to the image
-            newImage << g << " " << g << " " << g << endl;
+            newImage << newG << " " << newG << " " << newG << endl;
         }
     }
 
