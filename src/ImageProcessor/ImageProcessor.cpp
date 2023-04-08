@@ -64,12 +64,12 @@ void ImageProcessor::generateImage(const std::vector<std::vector<std::vector<int
 
     // Writing pixels to the output image
     // Leave the padding adn take input
-    int rows = paddedOutputImageMatrix.size(), cols = paddedOutputImageMatrix[0].size();
+    int rows = height, cols = width;
 
     // We leave the first and last of row and col as both are padded
-    for (int i = 1; i < rows; i++)
+    for (int i = 1; i <= rows; i++)
     {
-        for (int j = 1; j < cols; j++)
+        for (int j = 1; j <= cols; j++)
         {
             // Copying the pixels from matrix to outputImage
             outputImage << paddedOutputImageMatrix[i][j][0] << " "
