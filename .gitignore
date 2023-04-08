@@ -1,8 +1,6 @@
 # Ignoring all the images 
-images/input/*.ppm
-images/output/*.ppm
-!images/input/flower.ppm
-!images/output/black_white_gradient.ppm
+*.ppm
+!src/assets/images/input/flower.ppm
 
 # Prerequisites
 *.d
