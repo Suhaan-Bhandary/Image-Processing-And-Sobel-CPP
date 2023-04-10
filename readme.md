@@ -11,6 +11,10 @@ Also Implemented Sobel Edge Filter.
 - Applying Filters
 - Using Sobel Filter for edge detection
 
+## Output
+
+![Sobel Filter Image](./src/assets/public/sobelFilter.png)
+
 ## Image Research
 
 - Lossless Compression: Compression that can be reversed with no data loss
